@@ -2,9 +2,9 @@
 [TOC]
 
 # 1、简介 [![](http://appcan-download.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E6%B5%8B%2Fgf.png)]() 
-提供百度地图的相关相关功能。用户可以使用该插件在网页上嵌入一张地图,并实现对地图的基本操作, 例如放大缩小,移动,点击,隐藏,显示。另外还提供了定位功能,搜索功能,路线规划功能,地理编码功能 。
+提供百度地图的相关相关功能.用户可以使用该插件在网页上嵌入一张地图,并实现对地图的基本操作, 例如放大缩小,移动,点击,隐藏,显示.另外还提供了定位功能,搜索功能,路线规划功能,地理编码功能 .
 ## 1.1、说明
-安卓&iOS插件已支持**config.xml文件**配置AK。
+安卓&iOS插件已支持**config.xml文件**配置AK.
 >注:IDE插件因为涉及到百度方面的ID与Key暂时无法使用,此插件之前需要进行config.xml相关配置,具体使用点击查看:[附录](http://newdocx.appcan.cn/newdocx/docx?type=1384_975 "百度地图插件接入指引")----->百度地图插件接入指引
 
 ## 1.2、UI展示
@@ -17,16 +17,16 @@
 [点击](http://plugin.appcan.cn/details.html?id=281_index)插件中心至插件详情页(插件测试用例与插件源码已经提供)
 
 ## 1.5、平台版本支持
-本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统。  
-有特殊版本要求的API会在文档中额外说明。
+本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统.  
+有特殊版本要求的API会在文档中额外说明.
 
 ## 1.6、接口有效性
-本插件所有API默认在插件版本**4.0.0+**可用。  
-在后续版本中新添加的接口会在文档中额外说明。
+本插件所有API默认在插件版本**4.0.0+**可用.  
+在后续版本中新添加的接口会在文档中额外说明.
 
 # 2、API概览
 ## 2.1、方法
-> ### open 打开地图
+### 📦 open 打开地图
 
 `uexBaiduMap.open(x,y,width,height,longitude,latitude, callbackFunction)`
 
@@ -58,7 +58,7 @@ uexBaiduMap.open(10,100,480,640,"116.309","39.977", function(){
 });
 ```
 
-> ### close 关闭地图
+### 📦 close 关闭地图
 
 `uexBaiduMap.close()`
 
@@ -75,7 +75,7 @@ uexBaiduMap.open(10,100,480,640,"116.309","39.977", function(){
 ```
 uexBaiduMap.close();
 ```
-> ### hideMap 隐藏地图 
+### 📦 hideMap 隐藏地图 
 
 `uexBaiduMap.hideMap()`
 
@@ -93,7 +93,7 @@ uexBaiduMap.close();
 uexBaiduMap.hideMap();
 ```
 
-> ### showMap 显示地图
+### 📦 showMap 显示地图
 
 `uexBaiduMap.showMap()`
 
@@ -111,7 +111,7 @@ uexBaiduMap.hideMap();
 uexBaiduMap.showMap();
 ```
 
-> ### setMapType 设置地图的类型
+### 📦 setMapType 设置地图的类型
 
 `uexBaiduMap.setMapType(type)`
 
@@ -131,7 +131,7 @@ uexBaiduMap.showMap();
 uexBaiduMap.setMapType(1);
 ```
 
-> ### setTrafficEnabled 开启或关闭交通图 
+### 📦 setTrafficEnabled 开启或关闭交通图 
 
 `uexBaiduMap.setTrafficEnabled(type)`
 
@@ -151,7 +151,7 @@ uexBaiduMap.setMapType(1);
 uexBaiduMap.setTrafficEnabled(1);
 ```
 
-> ### setCenter 设置地图的中心点
+### 📦 setCenter 设置地图的中心点
 
 `uexBaiduMap.setCenter(longitude,latitude)`
 
@@ -172,7 +172,7 @@ uexBaiduMap.setTrafficEnabled(1);
 uexBaiduMap.setCenter(121.481,31.227);
 ```
 
-> ### getCenter 得到地图的中心点
+### 📦 getCenter 得到地图的中心点
 
 `uexBaiduMap.getCenter()`
 
@@ -185,14 +185,14 @@ uexBaiduMap.setCenter(121.481,31.227);
 
 **返回值**
 
-获取成功后，返回值是JSON对象，格式如下:
+获取成功后,返回值是JSON对象,格式如下:
 ```
 {
 	longitude:,
 	latitude:
 }
 ```
-如果失败，返回null
+如果失败,返回null
 
 **示例**
 
@@ -202,7 +202,7 @@ alert('data:' + JSON.stringify(data));
 ```
 
 
-> ### setZoomLevel 设置地图的比例级别
+### 📦 setZoomLevel 设置地图的比例级别
 
 `uexBaiduMap.setZoomLevel(zoomLevel)`
 
@@ -223,7 +223,7 @@ alert('data:' + JSON.stringify(data));
 uexBaiduMap.setZoomLevel(10);
 ```
 
-> ### zoomIn 放大一个地图级别
+### 📦 zoomIn 放大一个地图级别
 
 `uexBaiduMap.zoomIn()`
 
@@ -241,7 +241,7 @@ uexBaiduMap.setZoomLevel(10);
 uexBaiduMap.zoomIn();
 ```
 
-> ### zoomOut 缩小一个地图级别 
+### 📦 zoomOut 缩小一个地图级别 
 
 `uexBaiduMap.zoomOut()`
 
@@ -260,7 +260,7 @@ uexBaiduMap.zoomIn();
 uexBaiduMap.zoomOut();
 ```
 
-> ### rotate 旋转地图
+### 📦 rotate 旋转地图
 
 `uexBaiduMap.rotate(angle)`
 
@@ -280,7 +280,7 @@ uexBaiduMap.zoomOut();
 ```
 uexBaiduMap.rotate(90);
 ```
-> ### overlook 俯视地图 
+### 📦 overlook 俯视地图 
 
 `uexBaiduMap.overlook(angle)`
 
@@ -301,7 +301,7 @@ uexBaiduMap.rotate(90);
 uexBaiduMap.overlook(-30);
 ```
 
-> ### setZoomEnable 开启或关闭缩放 
+### 📦 setZoomEnable 开启或关闭缩放 
 
 `uexBaiduMap.setZoomEnable(type)`
 
@@ -321,7 +321,7 @@ uexBaiduMap.overlook(-30);
 uexBaiduMap.setZoomEnable(1);
 ```
 
-> ### setRotateEnable 开启或关闭旋转 
+### 📦 setRotateEnable 开启或关闭旋转 
 
 `uexBaiduMap.setRotateEnable(type)`
 
@@ -342,7 +342,7 @@ uexBaiduMap.setZoomEnable(1);
 uexBaiduMap.setRotateEnable(1);
 ```
 
-> ### setCompassEnable 开启或关闭指南针
+### 📦 setCompassEnable 开启或关闭指南针
 
 `uexBaiduMap.setCompassEnable(type)`
 
@@ -363,7 +363,7 @@ uexBaiduMap.setRotateEnable(1);
 uexBaiduMap.setCompassEnable(1);
 ```
 
-> ### setScrollEnable 开启或关闭平移
+### 📦 setScrollEnable 开启或关闭平移
 
 `uexBaiduMap.setScrollEnable(type)`
 
@@ -383,7 +383,7 @@ uexBaiduMap.setCompassEnable(1);
 ```
 uexBaiduMap.setScrollEnable(1);
 ```
-> ### setOverlookEnable 开启或关闭俯视 
+### 📦 setOverlookEnable 开启或关闭俯视 
 
 `uexBaiduMap.setOverlookEnable(type)`
 
@@ -403,7 +403,7 @@ uexBaiduMap.setScrollEnable(1);
 ```
 uexBaiduMap.setOverlookEnable(1);
 ```
-> ### addMarkersOverlay 添加标注
+### 📦 addMarkersOverlay 添加标注
 
 `uexBaiduMap.addMarkersOverlay(json);`
 
@@ -415,7 +415,7 @@ uexBaiduMap.setOverlookEnable(1);
 
 | 参数名称 | 参数类型 | 是否必选 | 说明                            |
 | ---- | ---- | ---- | ----------------------------- |
-| json | Json | 是    | 添加到地图的标注信息的集合。该字符串为JSON格式。如下: |
+| json | Json | 是    | 添加到地图的标注信息的集合.该字符串为JSON格式.如下: |
 
 ```javascript
 var json=[
@@ -431,7 +431,7 @@ var json=[
 ] 
 		
 ```
-各字段含义如下：
+各字段含义如下:
 
 | 参数        | 参数类型   | 是否必选 | 说明                            |
 | --------- | ------ | ---- | ----------------------------- |
@@ -444,7 +444,7 @@ var json=[
 
 **返回值**
 
-返回marker对象组成的一个数组，如果添加失败返回为空
+返回marker对象组成的一个数组,如果添加失败返回为空
 
 **示例**
 
@@ -484,7 +484,7 @@ if(!markers){
  
  
 ```
-> ### setMarkerOverlay 更新设置标注信息
+### 📦 setMarkerOverlay 更新设置标注信息
 
 `uexBaiduMap.setMarkerOverlay(marker,markerInfo);`
 
@@ -530,13 +530,13 @@ uexBaiduMap.setMarkerOverlay(marker, jsonStr);
  
 ```
 
-> ### showBubble 显示标注气泡 
+### 📦 showBubble 显示标注气泡 
 
 `uexBaiduMap.showBubble(marker);`
 
 **说明**
 
-显示指定标注气泡,地图上仅有一个标注气泡显示,其他标注气泡将被隐。
+显示指定标注气泡,地图上仅有一个标注气泡显示,其他标注气泡将被隐.
 
 **参数**
 
@@ -551,13 +551,13 @@ uexBaiduMap.setMarkerOverlay(marker, jsonStr);
 var marker = ;//addMarkersOverlay接口返回的marker对象
 uexBaiduMap.showBubble(marker);
 ```
-> ### hideBubble 隐藏标注气泡 
+### 📦 hideBubble 隐藏标注气泡 
 
 `uexBaiduMap.hideBubble();`
 
 **说明**
 
-当前显示的标注气泡将被隐藏。
+当前显示的标注气泡将被隐藏.
 
 **参数**
 
@@ -570,7 +570,7 @@ uexBaiduMap.showBubble(marker);
 ```
 uexBaiduMap.hideBubble();
 ```
-> ### addDotOverlay 添加点覆盖物 
+### 📦 addDotOverlay 添加点覆盖物 
 
 `uexBaiduMap.addDotOverlay(dotInfo);`
 
@@ -582,7 +582,7 @@ uexBaiduMap.hideBubble();
 
 | 参数名称    | 参数类型   | 是否必选 | 说明                         |
 | ------- | ------ | ---- | -------------------------- |
-| dotInfo | String | 是    | 添加到地图上的圆点信息。该字符串为JSON格式如下： |
+| dotInfo | String | 是    | 添加到地图上的圆点信息.该字符串为JSON格式如下: |
 
 ```
 var dotInfo={
@@ -604,7 +604,7 @@ var dotInfo={
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -621,7 +621,7 @@ if(!overlay){
 	alert("添加失败");
 }
 ```
-> ### addPolylineOverlay 添加折线覆盖物
+### 📦 addPolylineOverlay 添加折线覆盖物
 
 `uexBaiduMap.addPolylineOverlay(polylineInfo);`
 
@@ -633,7 +633,7 @@ if(!overlay){
 
 | 参数名称         | 参数类型   | 是否必选 | 说明                       |
 | ------------ | ------ | ---- | ------------------------ |
-| polylineInfo | String | 是    | 添加到地图上的折线信息。该字符串为JSON格式: |
+| polylineInfo | String | 是    | 添加到地图上的折线信息.该字符串为JSON格式: |
 
 ```
 var polylineInfo={
@@ -665,7 +665,7 @@ var polylineInfo={
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -697,7 +697,7 @@ if(!overlay){
 }
 ```
 
-> ### addArcOverlay 添加弧形覆盖物 
+### 📦 addArcOverlay 添加弧形覆盖物 
 
 `uexBaiduMap.addArcOverlay(arcInfo);`
 
@@ -709,7 +709,7 @@ if(!overlay){
 
 | 参数名称    | 参数类型   | 是否必选 | 说明                       |
 | ------- | ------ | ---- | ------------------------ |
-| arcInfo | String | 是    | 添加到地图上的弧形信息。该字符串为JSON格式: |
+| arcInfo | String | 是    | 添加到地图上的弧形信息.该字符串为JSON格式: |
 
 ```
 var arcInfo={
@@ -739,7 +739,7 @@ var arcInfo={
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -761,7 +761,7 @@ if(!overlay){
 }
 ```
 
-> ### addCircleOverlay 添加圆形覆盖物 
+### 📦 addCircleOverlay 添加圆形覆盖物 
 > `uexBaiduMap.addCircleOverlay(circleInfo);`
 
 **说明**
@@ -772,7 +772,7 @@ if(!overlay){
 
 | 参数名称       | 参数类型   | 是否必选 | 说明                         |
 | ---------- | ------ | ---- | -------------------------- |
-| circleInfo | String | 是    | 添加到地图上的圆形覆盖物信息。该字符串为JSON格式 |
+| circleInfo | String | 是    | 添加到地图上的圆形覆盖物信息.该字符串为JSON格式 |
 
 ```
 var circleInfo={
@@ -798,7 +798,7 @@ var circleInfo={
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -818,7 +818,7 @@ if(!overlay){
 }
 ```
 
-> ### addPolygonOverlay 添加几何图形覆盖物 
+### 📦 addPolygonOverlay 添加几何图形覆盖物 
 
 `uexBaiduMap.addPolygonOverlay(polygonInfo);`
 
@@ -830,7 +830,7 @@ if(!overlay){
 
 | 参数名称        | 参数类型   | 是否必选 | 说明                           |
 | ----------- | ------ | ---- | ---------------------------- |
-| polygonInfo | String | 是    | 添加到地图上的集合图形信息的集合。该字符串为JSON格式 |
+| polygonInfo | String | 是    | 添加到地图上的集合图形信息的集合.该字符串为JSON格式 |
 
 ```
 var polygonInfo={
@@ -860,7 +860,7 @@ var polygonInfo={
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -895,7 +895,7 @@ if(!overlay){
 }
 ```
 
-> ### addGroundOverlay 添加地形图图层覆盖物 
+### 📦 addGroundOverlay 添加地形图图层覆盖物 
 
 `uexBaiduMap.addGroundOverlay(groundInfo);`
 
@@ -907,7 +907,7 @@ if(!overlay){
 
 | 参数名称       | 参数类型   | 是否必选 | 说明                            |
 | ---------- | ------ | ---- | ----------------------------- |
-| groundInfo | String | 是    | 添加到地图上的地形图图层信息。该字符串为JSON格式如下： |
+| groundInfo | String | 是    | 添加到地图上的地形图图层信息.该字符串为JSON格式如下: |
 
 ```
 var groundInfo={
@@ -939,7 +939,7 @@ var groundInfo={
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -966,7 +966,7 @@ if(!overlay){
 	alert("添加失败");
 }
 ```
-> ### addTextOverlay 添加文字覆盖物 
+### 📦 addTextOverlay 添加文字覆盖物 
 
 `uexBaiduMap.addTextOverlay(textInfo);`
 
@@ -978,7 +978,7 @@ if(!overlay){
 
 | 参数名称     | 参数类型   | 是否必选 | 说明                            |
 | -------- | ------ | ---- | ----------------------------- |
-| textInfo | String | 是    | 添加到地图上的文字覆盖物信息。该字符串为JSON格式如下： |
+| textInfo | String | 是    | 添加到地图上的文字覆盖物信息.该字符串为JSON格式如下: |
 
 ```
 var textInfo = {
@@ -1006,7 +1006,7 @@ var textInfo = {
 
 **返回值**
 
-返回overlay覆盖物对象，如果添加失败返回为空
+返回overlay覆盖物对象,如果添加失败返回为空
 
 **示例**
 
@@ -1025,7 +1025,7 @@ if(!overlay){
 	alert("添加失败");
 }
 ```
-> ### removemarkersOverlay 移除标注 
+### 📦 removemarkersOverlay 移除标注 
 
 `uexBaiduMap.removemarkersOverlay(markers);`
 
@@ -1047,7 +1047,7 @@ if(!overlay){
  uexBaiduMap.removemarkersOverlay(markers);
 ```
 
-> ### removeOverlay 移除覆盖物 
+### 📦 removeOverlay 移除覆盖物 
 
 `uexBaiduMap.removeOverlay(overlay);`
 
@@ -1068,7 +1068,7 @@ if(!overlay){
  uexBaiduMap.removeOverlay(overlay);
 ```
 
-> ### poiSearchInCity 城市内检索 
+### 📦 poiSearchInCity 城市内检索 
 
 `uexBaiduMap.poiSearchInCity(json, callbackFunction);`
 
@@ -1079,7 +1079,7 @@ if(!overlay){
 **参数**
 
 ```
-json:(String类型) 必选搜索所需要的信息。该字符串为JSON格式
+json:(String类型) 必选搜索所需要的信息.该字符串为JSON格式
 var json={
 	city:,
 	searchKey:,
@@ -1103,13 +1103,13 @@ var data={
 	searchKey: "114",
 	pageNum: "0"
 };
-var jsonStr=JSON.stringify(data)；
+var jsonStr=JSON.stringify(data);
 uexBaiduMap.poiSearchInCity(jsonStr, function(data) {
 	alert(JSON.stringify(data));
 });
 ```
 
-`callbackFunction`的参数是JSON类型对象，其格式如下：
+`callbackFunction`的参数是JSON类型对象,其格式如下:
 
 ```
 {
@@ -1155,7 +1155,7 @@ uexBaiduMap.poiSearchInCity(jsonStr, function(data) {
 | currentPageCapacity | 是    | 当前页的poi结果数                            |
 
 
-> ### poiNearbySearch 周边检索 
+### 📦 poiNearbySearch 周边检索 
 
 `uexBaiduMap.poiNearbySearch(json, callbackFunction);`
 
@@ -1166,7 +1166,7 @@ uexBaiduMap.poiSearchInCity(jsonStr, function(data) {
 **参数**
 
 ```
-json:(String类型) 必选搜索所需要的信息。该字符串为JSON格式
+json:(String类型) 必选搜索所需要的信息.该字符串为JSON格式
 var json={
 	longitude:,
 	latitude:,
@@ -1206,7 +1206,7 @@ uexBaiduMap. poiNearbySearch (jsonStr, function(data) {
 `callbackFunction`的参数是JSON类型对象, 其格式同`poiSearchInCity`中的回调数据格式一致
 
 
-> ### poiBoundSearch 区域检索
+### 📦 poiBoundSearch 区域检索
 
 `uexBaiduMap.poiBoundSearch(json, callbackFunction);`
 
@@ -1217,7 +1217,7 @@ uexBaiduMap. poiNearbySearch (jsonStr, function(data) {
 **参数**
 
 ```
-json:(String类型) 必选搜索所需要的信息。该字符串为JSON格式
+json:(String类型) 必选搜索所需要的信息.该字符串为JSON格式
 var json={
 	searchKey:,
 	pageNum:,
@@ -1268,7 +1268,7 @@ uexBaiduMap.poiBoundSearch(jsonstr, function(data) {
 `callbackFunction`的参数是JSON类型对象, 其格式同`poiSearchInCity`中的回调数据格式一致
 
 
-> ### busLineSearch 公交线路检索
+### 📦 busLineSearch 公交线路检索
 
 `uexBaiduMap.busLineSearch(json, callbackFunction);`
 
@@ -1279,7 +1279,7 @@ uexBaiduMap.poiBoundSearch(jsonstr, function(data) {
 **参数**
 
 ```
-json:(String类型) 必选索所需要的信息。该字符串为JSON格式。
+json:(String类型) 必选索所需要的信息.该字符串为JSON格式.
 var json={
 	city:,
 	busLineName:
@@ -1293,7 +1293,7 @@ var json={
 | city        | 是    | 城市   |
 | busLineName | 是    | 公交名  |
 
-`callbackFunction`中的参数类型是JSON对象，格式如下：
+`callbackFunction`中的参数类型是JSON对象,格式如下:
 
 ```
 {
@@ -1338,7 +1338,7 @@ uexBaiduMap.busLineSearch(jsonStr, function(data) {
 });
 ```
 
-> ### removeBusLine 清除公交线路
+### 📦 removeBusLine 清除公交线路
 
 `uexBaiduMap.removeBusLine();`
 
@@ -1356,13 +1356,13 @@ uexBaiduMap.busLineSearch(jsonStr, function(data) {
 uexBaiduMap.removeBusLine(); 
 ```
 
-> ### preBusLineNode 显示上一个公交站点 
+### 📦 preBusLineNode 显示上一个公交站点 
 
 `uexBaiduMap.preBusLineNode();`
 
 **说明**
 
-显示公交线路中当前站点的上一个站点,起始站点无效, 该方法仅Android支持。
+显示公交线路中当前站点的上一个站点,起始站点无效, 该方法仅Android支持.
 
 **参数**
 
@@ -1375,13 +1375,13 @@ uexBaiduMap.removeBusLine();
 uexBaiduMap.preBusLineNode();
 ```
 
-> ### nextBusLineNode 显示下一个公交站点 
+### 📦 nextBusLineNode 显示下一个公交站点 
 
 `uexBaiduMap.nextBusLineNode();`
 
 **说明**
 
-显示公交线路中当前站点的下一个站点,终点站点无效，该方法仅Android支持。
+显示公交线路中当前站点的下一个站点,终点站点无效,该方法仅Android支持.
 
 **参数**
 
@@ -1394,18 +1394,18 @@ uexBaiduMap.preBusLineNode();
 uexBaiduMap.nextBusLineNode(); 
 ```
 
-> ### searchRoutePlan 规划并显示路线 
+### 📦 searchRoutePlan 规划并显示路线 
 
 `uexBaiduMap.searchRoutePlan(json);`
 
 **说明**
 
-根据起点和终点信息搜索并显示路线,信息可以用city和name结合模糊描述,也可以用longitude和latitude结合精确描述,在start和end里面可以出现任意一种结合方式。
+根据起点和终点信息搜索并显示路线,信息可以用city和name结合模糊描述,也可以用longitude和latitude结合精确描述,在start和end里面可以出现任意一种结合方式.
 
 **参数**
 
 ```
-json:(String类型) 必选规划路线所需要的信息。该字符串为JSON格式。
+json:(String类型) 必选规划路线所需要的信息.该字符串为JSON格式.
 var json={
 	type:,
 	start:{
@@ -1426,7 +1426,7 @@ var json={
 
 | 参数        | 是否必须 | 说明                  |
 | --------- | ---- | ------------------- |
-| type      | 是    | 路线类型:0-驾车；1-公交；2-步行 |
+| type      | 是    | 路线类型:0-驾车;1-公交;2-步行 |
 | start     | 是    | 起点信息,JSON格式         |
 | end       | 是    | 终点信息,JSON格式         |
 | city      | 否    | 城市,必须与name合用        |
@@ -1434,7 +1434,7 @@ var json={
 | longitude | 否    | 经度,必须与latitude合用    |
 | latitude  | 否    | 纬度                  |
 
-callbackFunction的参数是errorCode， 其数据含义如下：
+callbackFunction的参数是errorCode, 其数据含义如下:
 
 | 错误码  | 说明               |
 | ---- | ---------------- |
@@ -1448,13 +1448,13 @@ callbackFunction的参数是errorCode， 其数据含义如下：
 | 7    | key错误            |
 | 8    | 网络连接错误           |
 | 9    | 网络连接超时           |
-| 10   | 还未完成鉴权，请在鉴权通过后重试 |
+| 10   | 还未完成鉴权,请在鉴权通过后重试 |
 | 11   | 室内图ID错误          |
 | 12   | 室内图检索楼层错误        |
 
 **返回值**
 
-成功返回这条路线规划对象，失败为空
+成功返回这条路线规划对象,失败为空
 
 **示例**
 
@@ -1479,13 +1479,13 @@ if(!req){
 }
 ```
 
-> ### preRouteNode 显示上一个线路节点 
+### 📦 preRouteNode 显示上一个线路节点 
 
 `uexBaiduMap.preRouteNode();`
 
 **说明**
 
-显示线路规划中当前节点的上一个节点,起始节点无效，该方法仅Android支持。
+显示线路规划中当前节点的上一个节点,起始节点无效,该方法仅Android支持.
 
 **参数**
 
@@ -1497,7 +1497,7 @@ if(!req){
  uexBaiduMap.preRouteNode(); 
 ```
 
-> ### removeRoutePlan 清除线路规划 
+### 📦 removeRoutePlan 清除线路规划 
 
 `uexBaiduMap.removeRoutePlan(req);` 
 
@@ -1519,13 +1519,13 @@ var req=...;//这条路线规划对象, searchRoutePlan返回
  uexBaiduMap.removeRoutePlan(req);
 ```
 
-> ### nextRouteNode 显示下一个线路节点
+### 📦 nextRouteNode 显示下一个线路节点
 
 `uexBaiduMap.nextRouteNode();`
 
 **说明**
 
- 显示线路规划中当前节点的下一个节点,终点节点无效，该方法仅Android支持。
+ 显示线路规划中当前节点的下一个节点,终点节点无效,该方法仅Android支持.
 
 **参数**
 
@@ -1537,13 +1537,13 @@ var req=...;//这条路线规划对象, searchRoutePlan返回
 ```
  uexBaiduMap.nextRouteNode();
 ```
-> ### geocode 地理编码 
+### 📦 geocode 地理编码 
 
 `uexBaiduMap.geocode(json, callbackFunction)`
 
 **说明**
 
-根据地址获取经纬度信息, 执行完成后，回调`callbackFunction`.
+根据地址获取经纬度信息, 执行完成后,回调`callbackFunction`.
 
 **参数**
 
@@ -1562,7 +1562,7 @@ var json={
 | city    | 是    | 城市   |
 | address | 是    | 地址   |
 
-`callbackFunction`的参数是JSON对象， 其数据格式如下：
+`callbackFunction`的参数是JSON对象, 其数据格式如下:
 ```
 {
     longitude:,
@@ -1584,7 +1584,7 @@ uexBaiduMap.geocode(jsonstr, function(data) {
 });
 ```
 
-> ### reverseGeocode 反地理编码 
+### 📦 reverseGeocode 反地理编码 
 
 `uexBaiduMap.reverseGeocode(json, callbackFunction)`
 
@@ -1595,7 +1595,7 @@ uexBaiduMap.geocode(jsonstr, function(data) {
 **参数**
 
 ```
-json:(String类型) 必选经纬度该字符串为JSON格式。如下{longitude:"116.307827",latitude:"40.056957"}
+json:(String类型) 必选经纬度该字符串为JSON格式.如下{longitude:"116.307827",latitude:"40.056957"}
 ```
 
 各字段含义如下
@@ -1605,7 +1605,7 @@ json:(String类型) 必选经纬度该字符串为JSON格式。如下{longitude:
 | longitude | 是    | 经度   |
 | latitude  | 是    | 纬度   |
 
-`callbackFunction`的参数是JSON对象，其数据格式如下：
+`callbackFunction`的参数是JSON对象,其数据格式如下:
 ```
 {
 	address://地理位置信息
@@ -1625,7 +1625,7 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
 });
 ```
 
-> ### getCurrentLocation 获取当前位置 
+### 📦 getCurrentLocation 获取当前位置 
 
 `uexBaiduMap.getCurrentLocation(callbackFunction)`
 
@@ -1635,13 +1635,13 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
 
 **参数**
 
-`callbackFunction`函数的参数是JSON对象，其数据格式如下:
+`callbackFunction`函数的参数是JSON对象,其数据格式如下:
 
 ```
 {
     longitude:, //经度
     latitude:,  //纬度
-    timestamp:  //时间，格式如"2014-11-2217:46:37"
+    timestamp:  //时间,格式如"2014-11-2217:46:37"
 }
 ```
 
@@ -1654,7 +1654,7 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
  }); 
 ```
 
-> ### startLocation 开始连续定位 
+### 📦 startLocation 开始连续定位 
 
 `uexBaiduMap.startLocation()` 
 
@@ -1673,7 +1673,7 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
  uexBaiduMap.startLocation(); 
 ```
 
-> ### stopLocation 停止连续定位 
+### 📦 stopLocation 停止连续定位 
 
 `uexBaiduMap.stopLocation()`
 
@@ -1692,7 +1692,7 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
  uexBaiduMap.stopLocation(); 
 ```
 
-> ### setMyLocationEnable 显示或隐藏用户位置 
+### 📦 setMyLocationEnable 显示或隐藏用户位置 
 
 `uexBaiduMap.setMyLocationEnable(type)`
 
@@ -1712,7 +1712,7 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
  uexBaiduMap.setMyLocationEnable(1); 
 ```
 
-> ### setUserTrackingMode 设置跟踪模式 
+### 📦 setUserTrackingMode 设置跟踪模式 
 
 `uexBaiduMap.setUserTrackingMode(mode)`
 
@@ -1733,7 +1733,7 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
  uexBaiduMap.setUserTrackingMode(0); 
 ```
 
-> ### zoomControlsEnabled 显示或隐藏缩放控件 
+### 📦 zoomControlsEnabled 显示或隐藏缩放控件 
 
 `uexBaiduMap.zoomControlsEnabled(mode)`
 
@@ -1753,13 +1753,13 @@ uexBaiduMap.reverseGeocode(jsonStr, function(data) {
 uexBaiduMap.zoomControlsEnabled(0) 
 ```
 
-> ### getDistance 计算两点之间的距离 
+### 📦 getDistance 计算两点之间的距离 
 
 `uexBaiduMap.getDistance(lat1,lon1,lat2,lon2)`
 
 **说明**
 
-通过经纬度计算两点之间的距离，返回值是Number类型
+通过经纬度计算两点之间的距离,返回值是Number类型
 
 **参数**
 
@@ -1779,7 +1779,7 @@ var distance = uexBaiduMap.getDistance(lat1,lon1,lat2,lon2);
 
 ## 2.2、监听方法
 
-> ### onMapClickListener 点击地图的监听方法 
+### 📦 onMapClickListener 点击地图的监听方法 
 
 `uexBaiduMap.onMapClickListener(data)`
 
@@ -1801,7 +1801,7 @@ var data={
 | latitude  | 是    | 纬度   |
 
 
-> ### onMapDoubleClickListener 双击地图的监听方法
+### 📦 onMapDoubleClickListener 双击地图的监听方法
 
 `uexBaiduMap.onMapDoubleClickListener(data)`
 
@@ -1810,7 +1810,7 @@ var data={
 同onMapClickListener
 
 
-> ### onMapLongClickListener 长按地图的监听方法 
+### 📦 onMapLongClickListener 长按地图的监听方法 
 
 `uexBaiduMap.onMapLongClickListener(data)`
 
@@ -1819,7 +1819,7 @@ var data={
 同onMapClickListener
 
 
-> ### onMapStatusChangeListener 地图状态改变的监听方法
+### 📦 onMapStatusChangeListener 地图状态改变的监听方法
 
 `uexBaiduMap.onMapStatusChangeListener(json);`
 
@@ -1862,7 +1862,7 @@ uexBaiduMap.onMapStatusChangeListener = function(data){
 	alert(data);
 }
 ```
-> ### onMarkerClickListener 点击标注的监听方法 
+### 📦 onMarkerClickListener 点击标注的监听方法 
 
 `uexBaiduMap.onMarkerClickListener(markerId)`
 
@@ -1880,7 +1880,7 @@ uexBaiduMap.onMarkerClickListener = function(data){
 	alert(data);
 }
 ```
-> ### onMarkerBubbleClickListener 点击标注气泡的监听方法
+### 📦 onMarkerBubbleClickListener 点击标注气泡的监听方法
 
 `uexBaiduMap.onMarkerBubbleClickListener(markerId)`
 
@@ -1899,7 +1899,7 @@ uexBaiduMap.onMarkerBubbleClickListener = function(data){
 }
 ```
 
-> ### onSDKReceiverError 初始化地图时,key非法、网络错误时的监听方法
+### 📦 onSDKReceiverError 初始化地图时,key非法、网络错误时的监听方法
 
 `uexBaiduMap.onSDKReceiverError(data)`
 
@@ -1919,7 +1919,7 @@ uexBaiduMap.onSDKReceiverError = function(data){
 	alert(data);
 }
 ```
-> ### onReceiveLocation 开始定位后的监听方法 
+### 📦 onReceiveLocation 开始定位后的监听方法 
 
 `uexBaiduMap.onReceiveLocation(data)`
 
@@ -1950,15 +1950,15 @@ uexBaiduMap.onReceiveLocation = function(data){
 }
 ```
 
-> ### onSearchRoutePlan 线路规划搜索结果的监听
+### 📦 onSearchRoutePlan 线路规划搜索结果的监听
 
 `uexBaiduMap.onSearchRoutePlan(id)`
 
 **参数**
 
- id:(Number类型) 必选 线路规划id。
+ id:(Number类型) 必选 线路规划id.
 
-> ### onZoomLevelChangeListener 缩放级别改变时,获取缩放级别和中心点的监听方法 
+### 📦 onZoomLevelChangeListener 缩放级别改变时,获取缩放级别和中心点的监听方法 
 
 `uexBaiduMap.onZoomLevelChangeListener(level,latitude,longitude)`
 
@@ -2018,8 +2018,8 @@ API版本:`uexBaiduMap-4.0.0`
 | ------ | ---------------------------------------- |
 | 4.0.0  | 支持function传入                             |
 | 3.2.37 | 更新SDK,增加getCenter得到地图中心点方法               |
-| 3.2.36 | 优化了getDistance的算法，使用新版本SDK自带工具类DistanceUtil进行计算，使计算值更为精准 |
-| 3.2.35 | 更新SDK后appkey验证广播机制改变，由于onSDKReceiverError回调只为前端开发者所提供，所以使用Toast替代 |
+| 3.2.36 | 优化了getDistance的算法,使用新版本SDK自带工具类DistanceUtil进行计算,使计算值更为精准 |
+| 3.2.35 | 更新SDK后appkey验证广播机制改变,由于onSDKReceiverError回调只为前端开发者所提供,所以使用Toast替代 |
 | 3.2.34 | 修复了getCurrentLocation必须open才能使用的问题;修复了地理编码、反地理编码必须open才能使用的问题 |
 | 3.2.33 | 更新SDK版本,将百度地图所有库导入                       |
 | 3.2.32 | 增加了getDistance得到两点间直线距离方法,在回调方法cbPoiSearchResult中增加distance字段,返回距离;修复了文档中cbGetDistance代码case说明不对的问题 |

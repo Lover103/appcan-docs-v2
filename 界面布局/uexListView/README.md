@@ -12,13 +12,13 @@ optionList带操作选项的列表组件:实现列表项可向左滑动后右侧
 # 2、API概览
 
 ## 2.1、方法
-> ### open 打开listview
+### 📦 open 打开listview
 
 `uexListView.open(params);`
 
 **说明:**
 
-在界面的指定位置显示listview。
+在界面的指定位置显示listview.
 
 **参数:**
 
@@ -51,7 +51,7 @@ iOS6.0+
     };
     uexListView.open(JSON.stringify(params));
 ```
-> ### close 关闭listview视图
+### 📦 close 关闭listview视图
 
 `uexListView.close();`
 
@@ -78,7 +78,7 @@ iOS6.0+
     uexListView.close();
 ```
 
-> ### setItems 设置listview列表项数据
+### 📦 setItems 设置listview列表项数据
 
 `uexListView.setItems(params);`
 
@@ -89,7 +89,7 @@ iOS6.0+
 
 **参数:**
 
-  params:(String类型) 必选listview每一个条目数据的集合。该字符串为JSON格式。如下:
+  params:(String类型) 必选listview每一个条目数据的集合.该字符串为JSON格式.如下:
 
 ```
 var params = {
@@ -99,7 +99,7 @@ var params = {
             "placeholderImg":,//可选,头像占位图片
             "title":,//必选,标题
             "subtitle":,//必选,子标题
-            "rightBtnImg":,//可选,右侧按钮图片。(暂不支持)
+            "rightBtnImg":,//可选,右侧按钮图片.(暂不支持)
             "titleSize":,//可选,标题字体大小
             "titleColor":,//可选,标题字体颜色
             "subtitleSize":,//可选,子标题字体大小
@@ -192,7 +192,7 @@ iOS6.0+
     };
     uexListView.setItems(JSON.stringify(params));
 ```
-> ### deleteItemsAt 删除指定位置的数据
+### 📦 deleteItemsAt 删除指定位置的数据
 
 `uexListView.deleteItemsAt(params);`
 
@@ -202,7 +202,7 @@ iOS6.0+
 
 **参数:**
 
-  params:(String类型) 必选listview列表项索引的数组。该字符串为JSON格式,如下:
+  params:(String类型) 必选listview列表项索引的数组.该字符串为JSON格式,如下:
 
 ```
 var params = {
@@ -228,7 +228,7 @@ iOS6.0+
     uexListView.deleteItemsAt(JSON.stringify(params));
 ```
 
-> ### insertItemAt 插入数据到指定位置
+### 📦 insertItemAt 插入数据到指定位置
 
 `uexListView.insertItemAt(params);`
 图片路径支持 wgt:// wgts:// res:// file://  路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中 PathTypes 
@@ -239,7 +239,7 @@ iOS6.0+
 
 **参数:**
 
-  params:(String类型) 必选要插入listview数据的集合。该字符串为JSON格式,如下:
+  params:(String类型) 必选要插入listview数据的集合.该字符串为JSON格式,如下:
 
 ```
 var params ={
@@ -249,7 +249,7 @@ var params ={
         "placeholderImg":,//可选,头像占位图片
         "title":,//必选,标题
         "subtitle":,//必选,子标题
-        "rightBtnImg":",//可选,右侧按钮图片。(暂不支持)
+        "rightBtnImg":",//可选,右侧按钮图片.(暂不支持)
         "titleSize":,//可选,标题字体大小
         "titleColor":,//可选,标题字体颜色
         "subtitleSize":,//可选,子标题字体大小
@@ -292,7 +292,7 @@ iOS6.0+
     };
     uexListView.insertItemAt(JSON.stringify(params));
 ```
-> ### appendItems 加载数据
+### 📦 appendItems 加载数据
 
 `uexListView.appendItems(params)`
 图片路径支持 wgt:// wgts:// res:// file://  路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中 PathTypes 
@@ -303,7 +303,7 @@ iOS6.0+
 
 **参数:**
 
-  params:(String类型) 必选要插入listview列表项数据的集合。该字符串为JSON格式,如下:
+  params:(String类型) 必选要插入listview列表项数据的集合.该字符串为JSON格式,如下:
 
 ```
 var params = {
@@ -313,7 +313,7 @@ var params = {
             "placeholderImg":,//可选,头像占位图片
             "title":,//必选,标题
             "subtitle":,//必选,子标题
-            "rightBtnImg":,//可选,右侧按钮图片。(暂不支持)
+            "rightBtnImg":,//可选,右侧按钮图片.(暂不支持)
             "titleSize":,//可选,标题字体大小
             "titleColor":,//可选,标题字体颜色
             "subtitleSize":,//可选,子标题字体大小
@@ -358,7 +358,7 @@ iOS6.0+
     };
     uexListView.appendItems(JSON.stringify(params));
 ```
-> ### reloadItems 刷新数据
+### 📦 reloadItems 刷新数据
 
 `uexListView.reloadItems(params)`
 图片路径支持 wgt:// wgts:// res:// file://  路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中 PathTypes 
@@ -369,7 +369,7 @@ iOS6.0+
 
 **参数:**
 
- params:(String类型) 必选要刷新数据的集合。该字符串为JSON格式,如下:
+ params:(String类型) 必选要刷新数据的集合.该字符串为JSON格式,如下:
 ```
 var params = {
     "listItems":[//必选,listview列表项数据数组
@@ -378,7 +378,7 @@ var params = {
             "placeholderImg":,//可选,头像占位图片
             "title":,//必选,标题
             "subtitle":,//必选,子标题
-            "rightBtnImg":,//可选,右侧按钮图片。(暂不支持)
+            "rightBtnImg":,//可选,右侧按钮图片.(暂不支持)
             "titleSize":,//可选,标题字体大小
             "titleColor":,//可选,标题字体颜色
             "subtitleSize":,//可选,子标题字体大小
@@ -424,13 +424,13 @@ iOS6.0+
     uexListView.reloadItems(JSON.stringify(params));
 ```
 
-> ### setItemSwipeType 设置侧滑类型
+### 📦 setItemSwipeType 设置侧滑类型
 
 `uexListView.setItemSwipeType(type);`
 
 **说明:**
 
-  设置listview侧滑类型。
+  设置listview侧滑类型.
   
 
 **参数:**
@@ -455,13 +455,13 @@ iOS6.0+
     uexListView.setItemSwipeType(2);
 ```
 
-> ### setPullRefreshHeader 设置下拉刷新样式
+### 📦 setPullRefreshHeader 设置下拉刷新样式
 
 `uexListView.setPullRefreshHeader(params);`
 
 **说明:**
 
-设置listview下拉刷新样式。
+设置listview下拉刷新样式.
 图片路径支持 wgt:// wgts:// res:// file://  路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中 PathTypes 
 
 **参数:**
@@ -476,7 +476,7 @@ var params ={
         "pullRefreshNormalText":,//必选,下拉时文本
         "pullRefreshPullingText":,//必选,松开时文本
         "pullRefreshLoadingText":,//必选,加载中文本
-        "isShowUpdateDate"://必选,是否显示更新日期(0:不显示,1:显示)。安卓和ios格式不一样
+        "isShowUpdateDate"://必选,是否显示更新日期(0:不显示,1:显示).安卓和ios格式不一样
     }
 };
 ```
@@ -508,18 +508,18 @@ iOS6.0+
     uexListView.setPullRefreshHeader(JSON.stringify(params));
 ```
 
-> ### setPullRefreshFooter 设置上拉加载样式
+### 📦 setPullRefreshFooter 设置上拉加载样式
 
 `uexListView.setPullRefreshFooter(params);`
 
 **说明:**
 
-设置listview上拉加载样式。
+设置listview上拉加载样式.
 图片路径支持 wgt:// wgts:// res:// file://  路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中 PathTypes 
 
 **参数:**
 
-  params:(String类型) 必选加载样式的集合。该字符串为JSON格式,如下:
+  params:(String类型) 必选加载样式的集合.该字符串为JSON格式,如下:
 
 ```
 var params ={
@@ -531,7 +531,7 @@ var params ={
         "pullRefreshNormalText":,//必选,上拉时文本
         "pullRefreshPullingText":,//必选,松开时文本
         "pullRefreshLoadingText":,//必选,加载中文本
-        "isShowUpdateDate"://必选,是否显示日期(0:不显示,1:显示)。
+        "isShowUpdateDate"://必选,是否显示日期(0:不显示,1:显示).
     }
 };
 ```
@@ -564,13 +564,13 @@ iOS6.0+
 ```
 ## 2.2、监听方法
 
-> ### onItemClick 点击列表项的监听方法
+### 📦 onItemClick 点击列表项的监听方法
 
 `uexListView.onItemClick(itemIndex);`
 
 **说明:**
 
-点击列表项的监听方法。
+点击列表项的监听方法.
 
 **参数:**
 
@@ -595,13 +595,13 @@ iOS6.0+
     };
 ```
 
-> ### onLeftOptionButtonInItem 点击左边按钮的监听方法
+### 📦 onLeftOptionButtonInItem 点击左边按钮的监听方法
 
 `uexListView.onLeftOptionButtonInItem(itemIndex,optionBtnIndex);`
 
 **说明:**
 
-点击左边按钮的监听方法。
+点击左边按钮的监听方法.
 
 **参数:**
 
@@ -627,13 +627,13 @@ iOS6.0+
     };
 ```
 
-> ### onRightOptionButtonInItem 点击右边按钮的监听方法
+### 📦 onRightOptionButtonInItem 点击右边按钮的监听方法
 
 `uexListView.onRightOptionButtonInItem(itemIndex,optionBtnIndex);`
 
 **说明:**
 
-点击右边按钮的监听方法。
+点击右边按钮的监听方法.
 
 **参数:**
 
@@ -659,13 +659,13 @@ iOS6.0+
     };
 ```
 
-> ### ontPullRefreshHeaderListener 下拉刷新的监听方法
+### 📦 ontPullRefreshHeaderListener 下拉刷新的监听方法
 
 `uexListView.ontPullRefreshHeaderListener(status);`
 
 **说明:**
 
-下拉刷新的监听方法。
+下拉刷新的监听方法.
 
 **参数:**
 
@@ -690,7 +690,7 @@ iOS6.0+
     };
 ```
 
-> ### ontPullRefreshFooterListener 上拉加载的监听方法
+### 📦 ontPullRefreshFooterListener 上拉加载的监听方法
 
 `uexListView.ontPullRefreshFooterListener(status);`
 

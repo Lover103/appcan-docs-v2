@@ -13,18 +13,18 @@
 插件测试用例与源码下载:[点击](http://plugin.appcan.cn/details.html?id=184_index) 插件中心至插件详情页 (插件测试用例与插件源码已经提供)
 
 ## 1.4、平台版本支持
-本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统。
-有特殊版本要求的API会在文档中额外说明。
+本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统.
+有特殊版本要求的API会在文档中额外说明.
 
 ## 1.5、接口有效性
-本插件所有API默认在插件版本**4.0.0+**可用。  
-在后续版本中新添加的接口会在文档中额外说明。  
+本插件所有API默认在插件版本**4.0.0+**可用.  
+在后续版本中新添加的接口会在文档中额外说明.  
 
 
 # 2、API概览
 
 ## 2.1、方法
-> ### open 启动扫描
+### 📦 open 启动扫描
 
 `uexScanner.open(callbackFunction)`
 
@@ -38,7 +38,7 @@
 | ----- | ----- | ----- | ----- |
 | callbackFunction| 函数| 是 |扫描成功后的回调函数|
 
-`callbackFunction`的参数是JSON对象类型，其格式如下：
+`callbackFunction`的参数是JSON对象类型,其格式如下:
 
 ```
 {
@@ -46,7 +46,7 @@
     type:
 }
 ```
-如果打开失败，返回的参数为 `null`, 打开失败通常是因为没有开启摄像头权限所致。
+如果打开失败,返回的参数为 `null`, 打开失败通常是因为没有开启摄像头权限所致.
 
 **示例:**
 
@@ -61,7 +61,7 @@ uexScanner.open(callback);
 
 ```
 
-> ### setJsonData 设置数据
+### 📦 setJsonData 设置数据
 
 `uexScanner.setJsonData(params)`
 
@@ -129,7 +129,7 @@ API版本:`uexScanner-4.0.0`
 | 3.0.8 | ZBar更新UI,增加setJsonData接口 |
 | 3.0.7 | 修复uexScanner扫码画面颠倒问题 |
 | 3.0.6 | 修复插件包打包错误问题 |
-| 3.0.5 | 优化扫描界面。提供下载:[旧版二维码](/docAttach/975/uexScanner-3.0.5.zip "旧版二维码") |
+| 3.0.5 | 优化扫描界面.提供下载:[旧版二维码](/docAttach/975/uexScanner-3.0.5.zip "旧版二维码") |
 | 3.0.4 | CreateBarCode不能调用问题 |
 | 3.0.3 | 新增生成条形码和二维码接口 |
 | 3.0.2 | 修复手动输入条形码崩溃问题 |
