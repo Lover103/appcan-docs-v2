@@ -13,7 +13,7 @@
 
 # 2、API概览
 ## 2.1方法:
-> ### setData 设置数据
+### 📦 setData 设置数据
 
 `uexBrokenLine.setData(json)`
 
@@ -68,13 +68,13 @@ var jsd='{"y":{"min":"10","max":"70","step":"5"},"x":
 uexBrokenLine.setData(jsd);
 ```
 
-> ### open  打开界面
+### 📦 open  打开界面
 
 `  uexBrokenLine.open(x,y,width,height,id)`
 
 **说明:**
 
-同一个页面可以打开多个界面。
+同一个页面可以打开多个界面.
 
 **参数:**
 
@@ -102,7 +102,7 @@ iOS6.0+
 uexBrokenLine.open("10","100","460","700","1"); 
 ```
 
-> ### close  关闭界面
+### 📦 close  关闭界面
 
 `uexBrokenLine.close(id)`
 

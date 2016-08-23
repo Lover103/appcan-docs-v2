@@ -12,18 +12,18 @@
 
 
 ## 1.4、平台版本支持
-本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统。  
-有特殊版本要求的API会在文档中额外说明。
+本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统.  
+有特殊版本要求的API会在文档中额外说明.
 
 ## 1.5、接口有效性
-本插件所有API默认在插件版本**4.0.0+**可用。  
-在后续版本中新添加的接口会在文档中额外说明。
+本插件所有API默认在插件版本**4.0.0+**可用.  
+在后续版本中新添加的接口会在文档中额外说明.
 
 # 2、API概览
 
 ## 2.1、方法
 
-> ### open 打开评论输入
+### 📦 open 打开评论输入
 
 `uexInputTextFieldView.open(json)`
 
@@ -41,9 +41,9 @@ var json = {
 ```
 >参数emojicons的自定义表情配置文件为:"res://emojicons/emojicons.xml",详细配置步骤:
 
-1、在widget的wgtRes目录下创建emojicons目录；
+1、在widget的wgtRes目录下创建emojicons目录;
 2、在emojicons中放入表情以及删除的图片资源,表情的默认命名格式:
-ace_emoji_1,删除的默认命名格式:ace_emoji_delete.png；
+ace_emoji_1,删除的默认命名格式:ace_emoji_delete.png;
 3、在emojicons中创建emojicons.xml文件,格式如下:
 
 ```
@@ -56,10 +56,10 @@ ace_emoji_1,删除的默认命名格式:ace_emoji_delete.png；
 </emojicons>
 ```
 
-*   delete:删除对应的图片名；
-*   key:表情对应的文字；
+*   delete:删除对应的图片名;
+*   key:表情对应的文字;
 *   string:表情对应的图片名
-    * 说明:表情目录、图片名以及配置文件名都可以自定义命名,但是必须保证配置文件中的图片名与资源图片对应。
+    * 说明:表情目录、图片名以及配置文件名都可以自定义命名,但是必须保证配置文件中的图片名与资源图片对应.
 
 
 **示例**
@@ -73,7 +73,7 @@ var jsonStr = JSON.stringify(data)
 uexInputTextFieldView.open(jsonStr);
 ```
 
-> ### close 关闭评论输入
+### 📦 close 关闭评论输入
 
 `uexInputTextFieldView.close()`
 
@@ -94,7 +94,7 @@ uexInputTextFieldView.open(jsonStr);
 uexInputTextFieldView.close()
 ```
 
-> ### setInputFocused 输入框自动获取焦点
+### 📦 setInputFocused 输入框自动获取焦点
 
 `uexInputTextFieldView.setInputFocused()`
 
@@ -115,7 +115,7 @@ uexInputTextFieldView.setInputFocused();
 ```
 
 
->### getInputBarHeight 获取输入工具条高度 
+### 📦 getInputBarHeight 获取输入工具条高度 
 
 `uexInputTextFieldView.getInputBarHeight();  `
 
@@ -127,7 +127,7 @@ uexInputTextFieldView.setInputFocused();
 
 无
 
-**返回值：**
+**返回值:**
 
 int类型
 
@@ -140,7 +140,7 @@ var result=uexInputTextFieldView.getInputBarHeight();
 
 ## 2.2、监听方法
 
-> ### onCommit 点击评论按钮时的监听方法
+### 📦 onCommit 点击评论按钮时的监听方法
 
 `uexInputTextFieldView.onCommit(json)`
 
@@ -165,7 +165,7 @@ uexInputTextFieldView.onCommit = function(data){
     alert(data);
 }
 ```
-> ### onCommitJson 点击发送的监听方法
+### 📦 onCommitJson 点击发送的监听方法
 
 `uexInputTextFieldView.onCommitJson(json)`
 
@@ -191,7 +191,7 @@ window.uexOnload = function(){
 uexInputTextFieldView.onCommitJson = onCommitJson;
 }
 ```
-> ### onKeyBoardShow 键盘弹出或收起时的监听方法
+### 📦 onKeyBoardShow 键盘弹出或收起时的监听方法
 
 `uexInputTextFieldView.onKeyBoardShow(json)`
 
@@ -258,7 +258,7 @@ API版本:`uexInputTextFieldView-3.2.15`
 | 3.0.10 | 去掉插件中的ActivityGroup,配合引擎升级               |
 | 3.0.9  | 增加输入框自动获取焦点接口                            |
 | 3.0.8  | 修改EditText和webview中的输入框抢焦点的问题            |
-| 3.0.7  | 修改open接口,可设置发送按钮颜色和按钮字体的颜色。              |
+| 3.0.7  | 修改open接口,可设置发送按钮颜色和按钮字体的颜色.              |
 | 3.0.6  | 修改发送按钮为默认显示                              |
 | 3.0.5  | 修复点击输入框再点击物理返回键,直接退出插件问题                 |
 | 3.0.4  | 修改open接口                                 |

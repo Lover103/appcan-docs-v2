@@ -4,7 +4,7 @@
 腾讯分享插件
 
 ## 1.1、说明
-调用腾讯分享文字,图片。
+调用腾讯分享文字,图片.
 
 ## 1.2、UI展示
 ![](http://newdocx.appcan.cn/docximg/165128c2015g6x16g.jpg)
@@ -26,7 +26,7 @@ Path Types
 #2、API概览
 ## 2.1、方法:
 
-> ### registerApp 授权本应用访问用户微博账号       
+### 📦 registerApp 授权本应用访问用户微博账号       
 
 `uexTent.registerApp(appKey,appSecret,registerUrl)`
 
@@ -64,7 +64,7 @@ iOS6.0+
  
 见sendImageContent方法示例 
                 
-> ### sendTextContent 分享文本到腾讯微博
+### 📦 sendTextContent 分享文本到腾讯微博
 
 `uexTent.sendTextContent(txt)`
 
@@ -100,7 +100,7 @@ iOS6.0+
 
  
 见sendImageContent方法示例                 
-> ### sendImageContent 分享图片到腾讯微博   
+### 📦 sendImageContent 分享图片到腾讯微博   
 
 `uexTent.sendImageContent(imagePath,txt))`
 
@@ -198,7 +198,7 @@ var cInt = 2;
 ```
 ##2.2、回调方法:
 
-> ###cbRegisterApp 注册应用的回调方法        
+### 📦cbRegisterApp 注册应用的回调方法        
 
 `uexTent.cbRegisterApp(opId,dataType,data)`   
 
@@ -210,14 +210,14 @@ var cInt = 2;
 | ----- | ----- | ----- | ----- |
 | opId| Number类型| 必选 | 操作ID,在此函数中不起作用,可忽略   |
 | dataType|Number类型 | 必选 | 数据类型详见CONSTANT中Callback方法数据类型 |
-| data|Number类型 | 必选 | 分享结果,成功:0,失败:1。 |
+| data|Number类型 | 必选 | 分享结果,成功:0,失败:1. |
  
 
 **版本支持:**
 
  
 3.0.0+                  
-> ### cbShare 分享后的回调方法   
+### 📦 cbShare 分享后的回调方法   
 
 `uexTent.cbShare(opId,dataType,data);`
 
@@ -229,7 +229,7 @@ var cInt = 2;
 | ----- | ----- | ----- | ----- |
 | opId| Number类型| 必选 | 操作ID,在此函数中不起作用,可忽略   |
 | dataType|Number类型 | 必选 |  数据类型详见CONSTANT中Callback方法数据类型 |
-| data|Number类型 | 必选 | 分享结果,成功:0,失败:1。 |
+| data|Number类型 | 必选 | 分享结果,成功:0,失败:1. |
  
 
 **版本支持:**
@@ -267,7 +267,7 @@ API版本:`uexTent-3.0.11`
 | 3.0.8 | 已经授权时,注册接口提示已授权 |
 | 3.0.7 | 修改uexTent插件中cbShare回调方法返回值:成功为0,失败为1 |
 | 3.0.6 | 添加共享时授权过期处理 |
-| 3.0.5 | 修复注册回调函数在没有安装腾讯微博的时候不被回调的问题。 |
+| 3.0.5 | 修复注册回调函数在没有安装腾讯微博的时候不被回调的问题. |
 | 3.0.4 | 增加一个新的注册回调函数 |
 | 3.0.3 | 增加一个注册回调函数 |
 | 3.0.2 | 修复资源问题 |

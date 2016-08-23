@@ -10,16 +10,16 @@
 
 
 ## 1.4、平台版本支持
-本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统。 
-有特殊版本要求的API会在文档中额外说明。
+本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统. 
+有特殊版本要求的API会在文档中额外说明.
 
 ## 1.5、接口有效性
-本插件所有API默认在插件版本**4.0.0+**可用。  
-在后续版本中新添加的接口会在文档中额外说明。 
+本插件所有API默认在插件版本**4.0.0+**可用.  
+在后续版本中新添加的接口会在文档中额外说明. 
 
 # 2.API概览  
 ##2.1、方法  
->### createNewScrollPicture   新建一个轮播图
+### 📦 createNewScrollPicture   新建一个轮播图
 
 `uexScrollPicture.createNewScrollPicture(param)`
 
@@ -43,14 +43,14 @@ var param={
 | 名称       | 类型     | 是否必选 | 说明                                |
 | -------- | ------ | ---- | --------------------------------- |
 | interval | Number | 否    | 自动滚动的间隔时间,单位为毫秒,默认3000            |
-| anchor   | Array  | 否    | float数对[X,Y] 轮播图的左上角锚点的坐标，默认[0,0] |
+| anchor   | Array  | 否    | float数对[X,Y] 轮播图的左上角锚点的坐标,默认[0,0] |
 | height   | Number | 是    | 轮播图高度                             |
 | width    | Number | 是    | 轮播图宽度                             |
 | urls     | Array  | 是    | List<String> 的json字符串             |
 
 **返回值:**
 
-创建成功返回轮播图对象view，创建失败时返回null
+创建成功返回轮播图对象view,创建失败时返回null
 
 **示例**
 
@@ -69,7 +69,7 @@ if(!view1){
 
 ```
 
->### startAutoScroll   开始图片轮播
+### 📦 startAutoScroll   开始图片轮播
 
 `uexScrollPicture.startAutoScroll(param);`
 
@@ -93,7 +93,7 @@ var param={
 uexScrollPicture.startAutoScroll(JSON.stringify(param));
 ```
 
->### stopAutoScroll   停止图片轮播
+### 📦 stopAutoScroll   停止图片轮播
 >`uexScrollPicture.stopAutoScroll(param)`
 
 **说明**  
@@ -115,7 +115,7 @@ var param={
 uexScrollPicture.stopAutoScroll(JSON.stringify(param));
 ```
 
->### removeView   删除view
+### 📦 removeView   删除view
 >`uexScrollPicture.removeView(param)`
 
 **说明**  
@@ -140,12 +140,12 @@ uexScrollPicture.removeView(JSON.stringify(param));
 
 ##2.2、监听方法
 
->### onPicItemClick 轮播图点击事件
+### 📦 onPicItemClick 轮播图点击事件
 
 `uexScrollPicture.onPicItemClick(data)`
 
 **说明**
-点击时的监听函数，`onPicItemClick`的参数data是`String`类型
+点击时的监听函数,`onPicItemClick`的参数data是`String`类型
 
 **参数**
 

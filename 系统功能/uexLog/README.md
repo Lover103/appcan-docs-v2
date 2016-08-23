@@ -13,11 +13,11 @@ log插件
  
 ##2.1、方法
 
-> ### 			sendLog		向服务器发送信息		
+### 📦 			sendLog		向服务器发送信息		
 
 `uexLog.sendLog(log)`					
 **			说明:		**
-使用UDP协议发送log。服务器的ip在config.xml中logserverip中配置。端口号固定为:30050。
+使用UDP协议发送log.服务器的ip在config.xml中logserverip中配置.端口号固定为:30050.
 **  			参数:		**
 
 |  参数名称 | 参数类型  | 是否必选  |  说明 |

@@ -3,7 +3,7 @@
  #1、简介[![](http://appcan-download.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E6%B5%8B%2Fgf.png)]() 
 解压插件
 ##1.1、 说明
- 解压缩接口API。
+ 解压缩接口API.
 
 ##1.2、UI展示
 
@@ -16,7 +16,7 @@
 
 ##2.1、方法
 
-> ### 			zip	  压缩文件		
+### 📦 			zip	  压缩文件		
 
 `uexZip.zip(srcPath,zippedPath,cb)	`				
 **说明:**
@@ -26,8 +26,8 @@
 
 | 参数名称       | 参数类型       | 是否必选 | 说明                                       |
 | ---------- | ---------- | ---- | ---------------------------------------- |
-| srcPath    | String类型   | 必选   | 源文件路径。路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中PathTypes |
-| zippedPath | String类型   | 必选   | 目标文件路径。路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中PathTypes |
+| srcPath    | String类型   | 必选   | 源文件路径.路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中PathTypes |
+| zippedPath | String类型   | 必选   | 目标文件路径.路径协议详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中PathTypes |
 | cb         | function类型 | 可选   | 回调参数为true或false                          |
 
 **平台支持:**
@@ -43,7 +43,7 @@ uexZip.zip(srcPath,zippedPath,function(result) {
 });				
 ```
 
-> ### 			zipWithPassword		以加密的方式压缩文件		
+### 📦 			zipWithPassword		以加密的方式压缩文件		
 
 `uexZip.zipWithPassword(srcPath,zippedPath,password,cb)	`				
 **说明:**
@@ -72,7 +72,7 @@ function zipWithPassword() {srcPath,zippedPath,password,function(result){
 
 
 
-> ### 			unzip		解压缩文件		
+### 📦 			unzip		解压缩文件		
 
 `uexZip.unzip(srcPath,zippedPath,cb)				`	
 **说明:**
@@ -97,7 +97,7 @@ function unZip() {	uexZip.unzip(document.getElementById('hidunZip').value,docume
 	});
 }
 ```
-> ### 			unzipWithPassword		解压缩加密的文件		
+### 📦 			unzipWithPassword		解压缩加密的文件		
 
 `uexZip.unzipWithPassword(srcPath,zippedPath,password,cb)					`
 **说明:**

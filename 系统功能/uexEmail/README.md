@@ -4,7 +4,7 @@
 系统发送邮件插件
 
 ## 1.1、说明
- 封装系统发送邮件的操作。
+ 封装系统发送邮件的操作.
 
 ## 1.2、UI展示
  ![](http://newdocx.appcan.cn/docximg/152402m2015e6w7q.jpg)
@@ -16,13 +16,13 @@
 
 ## 2.1、方法
 
-> ### open 打开系统默认邮件发送程序界面,发送邮件
+### 📦 open 打开系统默认邮件发送程序界面,发送邮件
 
 `uexEmail.open(receiverEmail,subject,content,attachmentPath)`
 
 **说明:**
 
-打开系统默认邮件发送程序界面,如果系统没有发送邮件程序,则不作任何操作,并提示用户本机无邮件程序。
+打开系统默认邮件发送程序界面,如果系统没有发送邮件程序,则不作任何操作,并提示用户本机无邮件程序.
 
 **参数:**
 
@@ -32,7 +32,7 @@
 | receiverEmail  | String | 是    | 接收者的邮件地址,如果收件人有多个,用英文逗号隔开,如varstr='123@qq.com,123@163.com' |
 | subject        | String | 是    | 邮件主题                                     |
 | content        | String | 否    | 邮件正文                                     |
-| attachmentPath | String | 否    | 邮件附件路径,支持的协议有:wgt ://…,wgts://…,file://,等本地协议,详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中的PathTypes。如果有多个地址,请用英文逗号隔开,如varstr='wgt://xxx.txt,res://xxx.png' |
+| attachmentPath | String | 否    | 邮件附件路径,支持的协议有:wgt ://…,wgts://…,file://,等本地协议,详见[CONSTANT](http://newdocx.appcan.cn/newdocx/docx?type=978_975#Path Types "CONSTANT")中的PathTypes.如果有多个地址,请用英文逗号隔开,如varstr='wgt://xxx.txt,res://xxx.png' |
 
 **版本支持:**
 

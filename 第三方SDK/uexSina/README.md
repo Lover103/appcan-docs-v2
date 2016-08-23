@@ -4,9 +4,9 @@
 新浪分享插件
 
 ## 1.1 说明
-调用新浪分享文字,图片。
+调用新浪分享文字,图片.
 
-**iOS 9 以后,为了预防APP通过非正常渠道获取用户的某些隐私信息,Apple启用了URLScheme白名单机制。**
+**iOS 9 以后,为了预防APP通过非正常渠道获取用户的某些隐私信息,Apple启用了URLScheme白名单机制.**
 ​    
 * **为了正常使用插件的所有功能还需要配置URLScheme白名单**([什么是URLScheme白名单](http://bbs.appcan.cn/forum.php?mod=viewthread&tid=29503&extra=))
 * 配置白名单方法请参考[这里](http://newdocx.appcan.cn/newdocx/docx?type=1505_1291#设置urlScheme白名单)
@@ -21,7 +21,7 @@
 <string>weibosdk2.5</string>
 ```
 
-* iOS App用过uexSina插件打开新浪客户端进行授权、分享过程完成后,新浪客户端通过应用自定义的UrlScheme返回到本App,并传回授权、分享结果时,需要配置UrlScheme值。通过config.xml配置插件的方法如下
+* iOS App用过uexSina插件打开新浪客户端进行授权、分享过程完成后,新浪客户端通过应用自定义的UrlScheme返回到本App,并传回授权、分享结果时,需要配置UrlScheme值.通过config.xml配置插件的方法如下
 
 ```
 <config desc="uexSina" type="URLSCHEME">
@@ -48,23 +48,23 @@ Path Types
 | file:///sdcard/ | /storage/emulated/0/                     | 无                                 |
 
 ## 1.5、平台版本支持
-本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统。
-有特殊版本要求的API会在文档中额外说明。
+本插件的所有API默认支持**Android4.0+**和**iOS7.0+**操作系统.
+有特殊版本要求的API会在文档中额外说明.
 
 ## 1.6、接口有效性
-本插件所有API默认在插件版本**4.0.0+**可用。
-在后续版本中新添加的接口会在文档中额外说明。
+本插件所有API默认在插件版本**4.0.0+**可用.
+在后续版本中新添加的接口会在文档中额外说明.
 
 # 2、API概览
 ##  2.1 方法
 
-> ### registerApp 用户授权
+### 📦 registerApp 用户授权
 
 `uexSina.registerApp(appKey,appSecret,registerURL, callbackFunction) `
 
 **说明:**
 
-用户授权,用户授权后可以进行调用分享等接口,如果手机上有微博客户端,会直接调用客户端进行授权。如果没有,则开启网页让用户授权。
+用户授权,用户授权后可以进行调用分享等接口,如果手机上有微博客户端,会直接调用客户端进行授权.如果没有,则开启网页让用户授权.
 
 
 **参数:**
@@ -74,7 +74,7 @@ Path Types
 | appKey           | String   | 是    | 通过开放平台注册的appKey      |
 | appSecret        | String   | 是    | 通过开放平台注册的appSecret   |
 | registerURL      | String   | 是    | 通过开放平台注册的registerURL |
-| callbackFunction | Function | 是    | 回调函数，用来获取相关业务数据      |
+| callbackFunction | Function | 是    | 回调函数,用来获取相关业务数据      |
 
 **回调参数:**
 
@@ -84,13 +84,13 @@ var callbackFunction = function(data){}
 
 | 参数名称 | 类型     | 说明            |
 | ---- | ------ | ------------- |
-| data | Object | 返回的相关数据，形式见下： |
+| data | Object | 返回的相关数据,形式见下: |
 
 ```
 var data = {
     openId: 
     token:
-    code:// code 为0时表示成功, 此时openId和token会有值，1 代表失败
+    code:// code 为0时表示成功, 此时openId和token会有值,1 代表失败
 }
 ```
 
@@ -104,13 +104,13 @@ uexSina.registerApp(appKey,appSecret,registerUrl, function(data) {
 });
 ```
 
-> ### login 登录
+### 📦 login 登录
 
 `uexSina.login(appKey,registerUrl, callbackFunction); `
 
 **说明:**
 
-用户登录, 支持SSO登录。如果手机上端有微博客户端,会直接调用客户端进行登录授权。如果没有,则开启网页让用户登录授权。
+用户登录, 支持SSO登录.如果手机上端有微博客户端,会直接调用客户端进行登录授权.如果没有,则开启网页让用户登录授权.
 
 **参数:**
 
@@ -118,7 +118,7 @@ uexSina.registerApp(appKey,appSecret,registerUrl, function(data) {
 | ---------------- | -------- | ---- | ---------------------------- |
 | appKey           | String   | 是    | 通过开放平台注册的appKey,appKey申请点击跳转 |
 | registerURL      | String   | 是    | 通过开放平台注册的registerURL         |
-| callbackFunction | Function | 是    | 回调函数，用来获取相关业务数据              |
+| callbackFunction | Function | 是    | 回调函数,用来获取相关业务数据              |
 
 **回调参数:**
 
@@ -129,7 +129,7 @@ var callbackFunction = function(error, data){}
 
 | 参数名称  | 类型     | 说明                             |
 | ----- | ------ | ------------------------------ |
-| error | Number | 0表示获取成功，非0表示获取失败               |
+| error | Number | 0表示获取成功,非0表示获取失败               |
 | data  | Object | error非0返回NULL;error为0,其数据格式如下: |
 
 ```
@@ -155,19 +155,19 @@ uexSina.login(appKey,registerUrl,function(error,data){
 ```
 
 
-> ### getUserInfo 获取用户基本信息
+### 📦 getUserInfo 获取用户基本信息
 
 `uexSina.getUserInfo(callbackFunction); `
 
 **说明:**
 
-返回该用户的新浪微博相关信息,如用户名,姓别,所在地等。
+返回该用户的新浪微博相关信息,如用户名,姓别,所在地等.
 
 **参数:**
 
 | 参数名称             | 参数类型     | 是否必选 | 说明              |
 | ---------------- | -------- | ---- | --------------- |
-| callbackFunction | Function | 是    | 回调函数，用来获取相关业务数据 |
+| callbackFunction | Function | 是    | 回调函数,用来获取相关业务数据 |
 
 **回调参数:
 
@@ -190,7 +190,7 @@ var commonCallback = function(data) {
 uexSina.getUserInfo(commonCallback);
 ```
 
-> ### logout 退出
+### 📦 logout 退出
 
 `uexSina.logout(callbackFunction); `
 
@@ -202,7 +202,7 @@ uexSina.getUserInfo(commonCallback);
 
 | 参数名称             | 参数类型     | 是否必选 | 说明               |
 | ---------------- | -------- | ---- | ---------------- |
-| callbackFunction | Function | 是    | 回调函数，返回退出是否成功的状态 |
+| callbackFunction | Function | 是    | 回调函数,返回退出是否成功的状态 |
 
 **回调参数:**
 
@@ -212,7 +212,7 @@ var callbackFunction = function(data){}
 
 | 参数名称 | 类型     | 说明               |
 | ---- | ------ | ---------------- |
-| data | Number | 退出是否成功，0-成功，1-失败 |
+| data | Number | 退出是否成功,0-成功,1-失败 |
 
 **示例:**
 
@@ -222,7 +222,7 @@ uexSina.logout(function(data) {
 });
 ```
 
-> ### sendTextContent 分享文字
+### 📦 sendTextContent 分享文字
 
 `uexSina.sendTextContent(txt, callbackFunction)`
 
@@ -235,7 +235,7 @@ uexSina.logout(function(data) {
 | 参数名称             | 参数类型     | 是否必选 | 说明               |
 | ---------------- | -------- | ---- | ---------------- |
 | txt              | String   | 是    | 文本内容             |
-| callbackFunction | Function | 是    | 回调函数，返回分享是否成功的状态 |
+| callbackFunction | Function | 是    | 回调函数,返回分享是否成功的状态 |
 
 **回调参数:**
 
@@ -245,7 +245,7 @@ var callbackFunction = function(data){}
 
 | 参数名称 | 类型     | 说明               |
 | ---- | ------ | ---------------- |
-| data | Number | 分享是否成功，0-成功，1-失败 |
+| data | Number | 分享是否成功,0-成功,1-失败 |
 
 
 
@@ -254,11 +254,11 @@ var callbackFunction = function(data){}
 ```
 var txt = "中国最大的移动中间平台AppCan对新浪微博分享支持测试";
 uexSina.sendTextContent(txt, function(data) {
-    alert(data); // data: 0 成功， 1 失败
+    alert(data); // data: 0 成功, 1 失败
 });
 ```
 
-> ### sendImageContent 分享图片
+### 📦 sendImageContent 分享图片
 
 `uexSina.sendImageContent(imagePath,txt, callbackFunction)`
 
@@ -270,16 +270,16 @@ uexSina.sendTextContent(txt, function(data) {
 
 | 参数名称             | 参数类型     | 是否必选 | 说明                             |
 | ---------------- | -------- | ---- | ------------------------------ |
-| imagePath        | String   | 是    | 图片路径,路径协议详见CONSTANT中PathTypes。 |
+| imagePath        | String   | 是    | 图片路径,路径协议详见CONSTANT中PathTypes. |
 | txt              | String   | 是    | 文本内容                           |
-| callbackFunction | Function | 是    | 回调函数，返回分享是否成功的状态               |
+| callbackFunction | Function | 是    | 回调函数,返回分享是否成功的状态               |
 
 **回调参数:**
 
     var callbackFunction = function(data){}
 | 参数名称 | 类型     | 说明               |
 | ---- | ------ | ---------------- |
-| data | Number | 分享是否成功，0-成功，1-失败 |
+| data | Number | 分享是否成功,0-成功,1-失败 |
 
 **示例:**
 
@@ -303,7 +303,7 @@ API版本:`uexSina-4.0.0`
 | ------ | ---------------------------------------- |
 | 4.0.0  | 支持function传入                             |
 | 3.0.7  | uexSina添加分享图片可以分享网络图片的功能                 |
-| 3.0.6  | 替换SinaSDK3.1.1,重写授权登陆相关接口；新增login、logout、getUserInfo接口 |
+| 3.0.6  | 替换SinaSDK3.1.1,重写授权登陆相关接口;新增login、logout、getUserInfo接口 |
 | 3.0.5  | 注册回调方法名统一修改为uexSina.cbRegisterApp        |
 | 3.0.4  | 增加新浪授权登录                                 |
 | 3.0.3  | 取消用户新浪微博对appcan的自动关注                     |
